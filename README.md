@@ -9,3 +9,6 @@ Change the default currency/number of listings by editing the script and changin
 #Installation
 pip install tabulate<br>
 chmod +x ./coinmarketcap.py
+
+#Screenshot
+<img src="http://i.imgur.com/T4jkxRS.png">

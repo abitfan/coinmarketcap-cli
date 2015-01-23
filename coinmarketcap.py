@@ -11,13 +11,14 @@ def get_position(json):
     except KeyError:
         return 1000
 
-if len(sys.argv) == 2:
-        count = int(sys.argv[1])
-
 count = 10
 currency = "usd"
 url = "http://coinmarketcap.northpole.ro/api/v5/all.json"
 headers = ["Position","Name","Market Cap","Price","Available Supply","Volume 24h","Change 7h"]
+
+if len(sys.argv) == 2:
+        count = int(sys.argv[1])
+
 
 data = urllib2.urlopen(url).read()
 data = json.loads(data)['markets']
